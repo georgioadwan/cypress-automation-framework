@@ -15,6 +15,13 @@ describe("Verify checkboxes via webriveruni",() => {
         cy.get('#checkboxes > :nth-child(1) > input').as('option-1')
         cy.get('@option-1').check()
         cy.get('@option-1').check().should('be.checked')
+        /* ==== Generated with Cypress Studio ==== */
+        cy.get('[value="green"]').check();
+        cy.get('[value="blue"]').check();
+        cy.get('[value="yellow"]').check();
+        cy.get('#radio-buttons > [value="orange"]').check();
+        cy.get('[value="purple"]').check();
+        /* ==== End Cypress Studio ==== */
     });
     it("Checkbox challenge - Uncheck", () => {
         //Checks all checkboxes
